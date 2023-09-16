@@ -183,7 +183,8 @@ void* th_listen(void* arg){ //-接收线程
 				sleep(2);
 			}
 		}
-		if(len == 0 || len < 0){
+		else{
+			pthread_mutex_lock(&lock); //获取钥匙
 			change_state = true;
 			pthread_mutex_unlock(&lock); //释放钥匙
 			break; 
