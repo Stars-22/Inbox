@@ -31,7 +31,8 @@ int main(){
 	struct sockaddr_in saddr;
 	saddr.sin_family = AF_INET;
 	saddr.sin_port = htons(9999);
-	cout<<"收件箱客户端-V"<<version<<"  by繁星Stars"<<endl<<endl;
+	cout<<"收件箱客户端-V"<<version<<"  by繁星Stars"<<endl;
+	cout<<"  如果输入不了中文，最小化一下再打开"<<endl<<endl;
 	printf("请输入服务器IP:");
 	scanf("%s", &IP);
 	printf("等待连接ing...\n");
